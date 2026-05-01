@@ -26,6 +26,10 @@ import {
   Utensils,
   Car,
   TrendingUp,
+  Ship,
+  Waves as WavesIcon,
+  Leaf,
+  Briefcase,
 } from "lucide-react";
 import heroDubaiImg from "@/assets/hero-dubai.jpg";
 import heroDubaiVideo from "@/assets/hero-romblon.mp4";
@@ -109,9 +113,10 @@ const Index = () => {
 
   const experienceItems = [
     { icon: Anchor, text: t("home.experienceItem1") },
-    { icon: TreePalm, text: t("home.experienceItem2") },
-    { icon: Utensils, text: t("home.experienceItem3") },
-    { icon: Car, text: t("home.experienceItem4") },
+    { icon: Ship, text: t("home.experienceItem2") },
+    { icon: WavesIcon, text: t("home.experienceItem3") },
+    { icon: Leaf, text: t("home.experienceItem4") },
+    { icon: Briefcase, text: t("home.experienceItem5") },
   ];
 
   const districts = [
