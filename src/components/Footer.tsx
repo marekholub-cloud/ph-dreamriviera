@@ -26,10 +26,10 @@ export const Footer = ({ hideBlog = false }: FooterProps) => {
           <div className="grid md:grid-cols-12 gap-10 items-end">
             <div className="md:col-span-8">
               <p className="text-xs uppercase tracking-[0.3em] text-background/50 mb-6">
-                — go2dubai.online
+                — Dream Riviera
               </p>
               <h2 className="editorial-headline text-4xl md:text-6xl text-background leading-[1.05]">
-                Live Dubai. <span className="italic text-accent">Invest</span> in Dubai.
+                Own the Coast. <span className="italic text-accent">Experience</span> the Lifestyle.
               </h2>
             </div>
             <div className="md:col-span-4 md:text-right">
@@ -53,7 +53,7 @@ export const Footer = ({ hideBlog = false }: FooterProps) => {
           {/* Brand */}
           <div className="md:col-span-4">
             <Link to="/" className="flex flex-col mb-6">
-              <span className="font-serif text-3xl tracking-tight">go2dubai.online</span>
+              <span className="font-serif text-3xl tracking-tight">Dream Riviera</span>
               <span className="text-[11px] uppercase tracking-[0.25em] text-background/50 mt-1">
                 {t("footer.tagline")}
               </span>
@@ -156,7 +156,7 @@ export const Footer = ({ hideBlog = false }: FooterProps) => {
         <div className="container mx-auto px-6 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-xs text-background/50 tracking-wide">
-              © {new Date().getFullYear()} go2dubai.online — {t("footer.rights")}.
+              © {new Date().getFullYear()} Dream Riviera — {t("footer.rights")}.
             </p>
             <div className="flex gap-8 text-xs uppercase tracking-[0.2em]">
               <PrivacyPolicyDialog>
