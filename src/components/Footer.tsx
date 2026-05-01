@@ -50,9 +50,9 @@ export const Footer = ({ hideBlog = false }: FooterProps) => {
 
       {/* Main grid */}
       <div className="container mx-auto px-6 py-16">
-        <div className="grid md:grid-cols-12 gap-12">
+        <div className="grid md:grid-cols-3 gap-12">
           {/* Brand */}
-          <div className="md:col-span-4">
+          <div>
             <Link to="/" className="flex flex-col mb-6">
               <img src={dreamRivieraLogo} alt="Dream Riviera" className="h-20 w-auto object-contain self-start mb-2" />
               <span className="text-[11px] uppercase tracking-[0.25em] text-background/50 mt-1">
@@ -76,7 +76,7 @@ export const Footer = ({ hideBlog = false }: FooterProps) => {
           </div>
 
           {/* Quick Links */}
-          <div className="md:col-span-2">
+          <div>
             <h4 className="text-[11px] uppercase tracking-[0.25em] text-background/50 mb-6">
               {t("footer.quickLinks")}
             </h4>
@@ -92,7 +92,7 @@ export const Footer = ({ hideBlog = false }: FooterProps) => {
           </div>
 
           {/* Contact */}
-          <div className="md:col-span-4">
+          <div>
             <h4 className="text-[11px] uppercase tracking-[0.25em] text-background/50 mb-6">
               Contact
             </h4>
