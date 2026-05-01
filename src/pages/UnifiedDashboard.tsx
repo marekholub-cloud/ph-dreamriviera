@@ -9,7 +9,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Download, Loader2, Mail, Phone, User, Search, Filter, Users, BarChart3, FileText, MessageSquare, TrendingUp, ExternalLink, ChevronDown, ChevronUp, Construction } from "lucide-react";
 import { toast } from "@/hooks/use-toast";
-import logoImage from "@/assets/logo-white.png";
+import logoImage from "@/assets/dreamriviera-logo-admin.png";
 import { format } from "date-fns";
 import { cs } from "date-fns/locale";
 import { DevelopersManager } from "@/components/admin/DevelopersManager";

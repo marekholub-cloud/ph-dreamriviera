@@ -62,7 +62,7 @@ import { RentalMessagesInbox } from "@/components/rentals/RentalMessagesInbox";
 import { FinancesSection } from "@/components/dashboard/FinancesSection";
 import { OfflineReservationSection } from "@/components/dashboard/OfflineReservationSection";
 import { DashboardSwitcher } from "@/components/DashboardSwitcher";
-import logoImage from "@/assets/logo-produbai.png";
+import logoImage from "@/assets/dreamriviera-logo-admin.png";
 
 type HostTab =
   | "my-profile"
