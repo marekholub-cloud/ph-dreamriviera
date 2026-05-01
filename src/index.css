@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Editorial premium real-estate theme.
+   Off-white base, charcoal type, jemný akcent.
+   All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 60 20% 98%;
+    --foreground: 0 0% 8%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
+
+    --primary: 0 0% 8%;
+    --primary-foreground: 60 20% 98%;
+
+    --secondary: 60 12% 95%;
+    --secondary-foreground: 0 0% 10%;
+
+    --muted: 60 12% 95%;
+    --muted-foreground: 0 0% 42%;
+
+    --accent: 20 40% 45%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 20 40% 45%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 220 15% 25%;
+    --sidebar-primary: 20 40% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 20 40% 94%;
+    --sidebar-accent-foreground: 20 40% 30%;
+    --sidebar-border: 220 13% 93%;
+    --sidebar-ring: 20 40% 45%;
+
+    --gradient-radial: radial-gradient(circle at top, hsl(0 0% 100%), hsl(0 0% 98%));
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    
+    /* Brand accent variants (brown) */
+    --pink: 20 40% 45%;
+    --pink-light: 20 40% 55%;
+    --pink-dark: 20 45% 35%;
+    --pink-muted: 20 25% 60%;
+    
+    /* Status colors */
+    --status-premium: 20 40% 45%;
+    --status-vip: 263 70% 60%;
+    --status-client: 160 60% 45%;
+    --status-qualified: 200 70% 50%;
+    --status-lead: 30 70% 50%;
+    --status-visitor: 220 40% 50%;
+
+    /* UI Kit inspired colors */
+    --crm-primary: 20 40% 45%;
+    --crm-primary-light: 20 40% 55%;
+    --crm-primary-dark: 20 45% 35%;
+    --crm-accent-green: 145 65% 39%;
+    --crm-accent-blue: 207 90% 54%;
+    --crm-accent-orange: 27 98% 54%;
+    --crm-accent-purple: 263 70% 50%;
+    --crm-accent-teal: 174 72% 40%;
+    --crm-accent-yellow: 45 93% 47%;
+    
+    /* Card gradient backgrounds */
+    --card-green-start: 152 69% 25%;
+    --card-green-end: 152 50% 18%;
+    --card-blue-start: 207 75% 35%;
+    --card-blue-end: 207 60% 22%;
+    --card-orange-start: 27 80% 40%;
+    --card-orange-end: 27 60% 25%;
+    --card-dark-start: 0 0% 98%;
+    --card-dark-end: 0 0% 95%;
+
+    /* Admin section colors */
+    --admin-system: 215 20% 50%;
+    --admin-system-muted: 215 15% 90%;
+    --admin-events: 207 90% 54%;
+    --admin-events-muted: 207 50% 90%;
+    --admin-clients: 152 69% 40%;
+    --admin-clients-muted: 152 50% 90%;
+    --admin-content: 27 98% 54%;
+    --admin-content-muted: 27 50% 90%;
+    --admin-leads: 350 70% 55%;
+    --admin-leads-muted: 350 50% 90%;
+    --admin-stats: 174 72% 45%;
+    --admin-stats-muted: 174 50% 90%;
+    --admin-deals: 45 93% 50%;
+    --admin-deals-muted: 45 50% 90%;
+
+    /* CRM/Dashboard enhancement tokens */
+    --sidebar-hover: 20 40% 94%;
+    --sidebar-active: 20 40% 45%;
+    --header-glass: 0 0% 100% / 0.9;
+    --card-elevated: 0 0% 100%;
+    --card-highlight: 20 40% 95%;
+    --success: 145 65% 39%;
+    --success-muted: 145 40% 90%;
+    --warning: 27 98% 54%;
+    --warning-muted: 27 50% 90%;
+    --info: 207 90% 54%;
+    --info-muted: 207 50% 90%;
+  }
+
+  .dark {
+    --background: 220 15% 8%;
+    --foreground: 0 0% 95%;
+    --card: 220 15% 12%;
+    --card-foreground: 0 0% 95%;
+    --popover: 220 15% 12%;
+    --popover-foreground: 0 0% 95%;
+    --primary: 20 40% 45%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 12% 18%;
+    --secondary-foreground: 0 0% 95%;
+    --muted: 220 12% 25%;
+    --muted-foreground: 0 0% 60%;
+    --accent: 20 40% 45%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 65% 55%;
+    --destructive-foreground: 0 0% 95%;
+    --border: 220 12% 20%;
+    --input: 220 12% 20%;
+    --ring: 20 40% 45%;
+    --sidebar-background: 220 15% 10%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 20 40% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 12% 18%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 220 12% 20%;
+    --sidebar-ring: 20 40% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "ss01", "cv11";
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply tracking-tight;
+  }
+}
+
+/* Editorial utilities */
+@layer utilities {
+  .text-balance { text-wrap: balance; }
+  .text-pretty { text-wrap: pretty; }
+
+  .editorial-headline {
+    @apply font-serif font-normal tracking-tight leading-[0.95];
+    letter-spacing: -0.02em;
+  }
+
+  .editorial-eyebrow {
+    @apply text-xs uppercase tracking-[0.2em] text-muted-foreground font-medium;
+  }
+
+  .hover-lift {
+    transition: transform 500ms cubic-bezier(0.22, 1, 0.36, 1), box-shadow 500ms ease;
+  }
+  .hover-lift:hover {
+    transform: translateY(-4px);
+  }
+
+  .reveal-up {
+    animation: reveal-up 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+  }
+}
+
+@keyframes reveal-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Custom scrollbar for light theme */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(0 0% 95%);
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(0 0% 80%);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(20 40% 45%);
+}
+
+/* Infinite scroll animation for developers carousel */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 30s linear infinite;
+}
+
+.animate-scroll:hover {
+  animation-play-state: paused;
+}

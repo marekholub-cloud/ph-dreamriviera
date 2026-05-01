@@ -1,0 +1,1 @@
+DROP POLICY IF EXISTS "Block anonymous access to investor_questionnaires" ON public.investor_questionnaires;

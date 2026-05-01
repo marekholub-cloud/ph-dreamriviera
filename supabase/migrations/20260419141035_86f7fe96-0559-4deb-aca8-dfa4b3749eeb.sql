@@ -1,0 +1,1 @@
+ALTER TYPE public.rental_property_status ADD VALUE IF NOT EXISTS 'approved';
