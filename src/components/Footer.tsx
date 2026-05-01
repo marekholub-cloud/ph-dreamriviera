@@ -111,11 +111,11 @@ export const Footer = ({ hideBlog = false }: FooterProps) => {
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-4 w-4 text-accent flex-shrink-0" />
-                <a href="tel:+420739322515" className={linkCls}>+420 739 322 515</a>
+                <a href="tel:+420727822988" className={linkCls}>+420 727 822 988</a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-4 w-4 text-accent flex-shrink-0" />
-                <a href="mailto:info@produbai.eu" className={linkCls}>info@produbai.eu</a>
+                <a href="mailto:info@dreamriviera.com" className={linkCls}>info@dreamriviera.com</a>
               </li>
             </ul>
           </div>
