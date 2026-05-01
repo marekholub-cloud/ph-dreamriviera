@@ -272,7 +272,7 @@ const COPY = {
   },
 } as const;
 
-import HERO_VIDEO from "@/assets/why-dubai-hero.mp4";
+import HERO_VIDEO from "@/assets/why-philippines-hero.mp4";
 import IMG_INTRO from "@/assets/why-dubai-cityscape.jpg";
 
 const WhyDubai = () => {

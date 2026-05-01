@@ -168,6 +168,7 @@ const AppContent = () => {
             </ProtectedRoute>
           } 
         />
+        <Route path="/why-philippines" element={<WhyDubai />} />
         <Route path="/why-dubai" element={<WhyDubai />} />
         <Route path="/why-costa-rica" element={<WhyDubai />} />
         <Route path="/invest" element={<Invest />} />
