@@ -120,10 +120,10 @@ const Index = () => {
   ];
 
   const districts = [
-    t("home.locationDistrict1"),
-    t("home.locationDistrict2"),
-    t("home.locationDistrict3"),
-    t("home.locationDistrict4"),
+    { name: t("home.locationDistrict1Name"), desc: t("home.locationDistrict1Desc") },
+    { name: t("home.locationDistrict2Name"), desc: t("home.locationDistrict2Desc") },
+    { name: t("home.locationDistrict3Name"), desc: t("home.locationDistrict3Desc") },
+    { name: t("home.locationDistrict4Name"), desc: t("home.locationDistrict4Desc") },
   ];
 
   return (
@@ -458,20 +458,25 @@ const Index = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-px bg-border">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-px bg-border">
             {districts.map((district, index) => (
               <motion.div
-                key={district}
+                key={district.name}
                 initial={{ opacity: 0, y: 16 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "-60px" }}
                 transition={{ duration: 0.6, delay: index * 0.06 }}
-                className="bg-background p-8 flex items-center gap-3"
+                className="bg-background p-8"
               >
-                <MapPin className="h-4 w-4 text-primary shrink-0" strokeWidth={1.5} />
-                <span className="text-sm md:text-base font-medium text-foreground">
-                  {district}
-                </span>
+                <div className="flex items-center gap-3 mb-3">
+                  <MapPin className="h-5 w-5 text-primary shrink-0" strokeWidth={1.5} />
+                  <h3 className="text-lg md:text-xl font-semibold text-foreground">
+                    {district.name}
+                  </h3>
+                </div>
+                <p className="text-xs md:text-sm text-muted-foreground leading-relaxed font-light">
+                  {district.desc}
+                </p>
               </motion.div>
             ))}
           </div>
