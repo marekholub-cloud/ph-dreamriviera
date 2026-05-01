@@ -54,7 +54,7 @@ export const Footer = ({ hideBlog = false }: FooterProps) => {
           {/* Brand */}
           <div className="md:col-span-4">
             <Link to="/" className="flex flex-col mb-6">
-              <img src={dreamRivieraLogo} alt="Dream Riviera" className="h-16 w-auto mb-2" />
+              <img src={dreamRivieraLogo} alt="Dream Riviera" className="h-20 w-auto object-contain self-start mb-2" />
               <span className="text-[11px] uppercase tracking-[0.25em] text-background/50 mt-1">
                 {t("footer.tagline")}
               </span>
