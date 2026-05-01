@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import dreamRivieraLogo from "@/assets/dreamriviera-logo.png";
 import dreamRivieraLogoDark from "@/assets/dreamriviera-logo-dark.png";
+import dreamRivieraLogoHorizontal from "@/assets/dreamriviera-logo-horizontal.png";
 import { useTranslation } from "react-i18next";
 import { HamburgerMenu } from "@/components/HamburgerMenu";
 import { LayoutDashboard, Heart, Globe, ChevronDown, Check } from "lucide-react";
