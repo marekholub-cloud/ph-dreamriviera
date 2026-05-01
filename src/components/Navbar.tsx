@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
-import produbaiLogo from "@/assets/produbai-logo.png";
-import produbaiLogoWhite from "@/assets/produbai-logo-white.svg";
+import dreamRivieraLogo from "@/assets/dreamriviera-logo.png";
+import dreamRivieraLogoDark from "@/assets/dreamriviera-logo-dark.png";
 import { useTranslation } from "react-i18next";
 import { HamburgerMenu } from "@/components/HamburgerMenu";
 import { LayoutDashboard, Heart, Globe, ChevronDown, Check } from "lucide-react";
@@ -106,28 +106,16 @@ export const Navbar = () => {
       <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${isVisible ? 'translate-y-0' : '-translate-y-full'} ${showDarkBg ? 'bg-background/95 backdrop-blur-md border-b border-border shadow-sm' : 'bg-transparent'}`}>
         <div className="container mx-auto px-8 py-5 flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center gap-4">
-            <Link to="/" className="flex flex-col group">
-              <span className={`text-2xl font-bold tracking-tight ${showDarkBg ? 'text-foreground' : 'text-white'}`}>
-                go2dubai.online
-              </span>
-              <span className={`text-[0.7rem] uppercase tracking-[0.05em] ${showDarkBg ? 'text-muted-foreground' : 'text-white/60'}`}>
-                DUBAI VILLAS & APARTMENTS
-              </span>
-            </Link>
-            <div className="hidden sm:block h-8 w-px bg-current opacity-20" aria-hidden="true" />
-            <Link
-              to="/"
-              className="hidden sm:flex items-center"
-              aria-label="Produbai"
-            >
-              <img
-                src={showDarkBg ? produbaiLogo : produbaiLogoWhite}
-                alt="Produbai"
-                className="h-5 w-auto object-contain"
-              />
-            </Link>
-          </div>
+          <Link to="/" className="flex items-center gap-3 group" aria-label="Dream Riviera">
+            <img
+              src={showDarkBg ? dreamRivieraLogoDark : dreamRivieraLogo}
+              alt="Dream Riviera"
+              className="h-10 w-auto object-contain"
+            />
+            <span className={`hidden sm:flex flex-col leading-tight ${showDarkBg ? 'text-foreground' : 'text-white'}`}>
+              <span className="font-serif text-lg tracking-wide">Dream Riviera</span>
+            </span>
+          </Link>
           
           {/* Desktop nav removed — using hamburger menu on all viewports */}
 
