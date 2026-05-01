@@ -109,7 +109,13 @@ export const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group" aria-label="Dream Riviera">
             <img
-              src={showDarkBg ? dreamRivieraLogoDark : dreamRivieraLogo}
+              src={
+                ['/map', '/map-for-sale', '/nemovitosti-mapa'].includes(location.pathname)
+                  ? dreamRivieraLogoHorizontal
+                  : showDarkBg
+                  ? dreamRivieraLogoDark
+                  : dreamRivieraLogo
+              }
               alt="Dream Riviera"
               className="h-7 w-auto object-contain"
             />
