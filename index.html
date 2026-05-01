@@ -62,11 +62,9 @@ The Philippines is rapidly emerging as one of Southeas">
         transition: opacity 0.4s ease;
       }
       #app-preloader.hidden { opacity: 0; pointer-events: none; }
-      #app-preloader .brand {
-        font-size: 2rem;
-        font-weight: 700;
-        letter-spacing: -0.02em;
-        color: hsl(222 47% 11%);
+      #app-preloader .logo {
+        width: 140px;
+        height: auto;
         animation: preloader-pulse 1.6s ease-in-out infinite;
       }
       #app-preloader .tagline {
@@ -83,8 +81,8 @@ The Philippines is rapidly emerging as one of Southeas">
       }
     </style>
     <div id="app-preloader">
-      <div class="brand">go2dubai.online</div>
-      <div class="tagline">Dubai Villas &amp; Apartments Reservations</div>
+      <img class="logo" src="/dreamriviera-logo-mark.png" alt="Dream Riviera" />
+      <div class="tagline">Dream Riviera</div>
     </div>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
