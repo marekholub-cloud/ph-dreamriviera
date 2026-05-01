@@ -22,11 +22,11 @@ const COPY = {
     seoTitle: "Why Dubai — Luxury, Innovation & Opportunity | go2dubai.online",
     seoDesc:
       "Discover why Dubai is one of the world's most desirable destinations — for travel, living, and investment.",
-    heroEyebrow: "— Why Dubai",
-    heroTitle: "Why Dubai",
+    heroEyebrow: "— Why Philippines",
+    heroTitle: "Why the Philippines",
     heroSubtitle:
-      "A global destination where luxury living, innovation, and opportunity come together.",
-    heroCta: "Explore properties",
+      "A tropical investment destination where natural beauty, rising tourism, and high-growth opportunity come together.",
+    heroCta: "Explore Investment Opportunities",
     heroCta2: "Contact us",
 
     introEyebrow: "— A vision of the future",
