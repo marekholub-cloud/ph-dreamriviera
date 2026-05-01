@@ -498,8 +498,11 @@ const Index = () => {
               <p className="text-base md:text-lg text-background/75 leading-relaxed font-light mb-5">
                 {t("home.investorP1")}
               </p>
-              <p className="text-base md:text-lg text-background/75 leading-relaxed font-light mb-10">
+              <p className="text-base md:text-lg text-background/75 leading-relaxed font-light mb-5">
                 {t("home.investorP2")}
+              </p>
+              <p className="text-base md:text-lg text-background/75 leading-relaxed font-light mb-10">
+                {t("home.investorP3")}
               </p>
               <Button
                 size="lg"
@@ -514,26 +517,29 @@ const Index = () => {
             </div>
             <div className="md:col-span-5 grid grid-cols-2 gap-4">
               {[
-                { value: "10–12%", label: "Avg. ROI" },
-                { value: "0%", label: "Property tax" },
-                { value: "Top 3", label: "Global market" },
-                { value: "24/7", label: "Local support" },
-              ].map((stat, i) => (
-                <motion.div
-                  key={stat.label}
-                  initial={{ opacity: 0, y: 16 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6, delay: i * 0.08 }}
-                  className="border border-background/15 p-6 backdrop-blur-sm"
-                >
-                  <TrendingUp className="h-4 w-4 text-primary mb-3" strokeWidth={1.5} />
-                  <div className="font-serif text-3xl md:text-4xl mb-1">{stat.value}</div>
-                  <div className="text-xs uppercase tracking-[0.15em] text-background/55">
-                    {stat.label}
-                  </div>
-                </motion.div>
-              ))}
+                { value: "7–10%", label: t("home.statRoi"), icon: TrendingUp },
+                { value: t("home.statExclusiveValue"), label: t("home.statExclusive"), icon: Sparkles },
+                { value: "7,641", label: t("home.statIslands"), icon: TreePalm },
+                { value: "24/7", label: t("home.statManagement"), icon: Briefcase },
+              ].map((stat, i) => {
+                const Icon = stat.icon;
+                return (
+                  <motion.div
+                    key={stat.label}
+                    initial={{ opacity: 0, y: 16 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.6, delay: i * 0.08 }}
+                    className="border border-background/15 p-6 backdrop-blur-sm"
+                  >
+                    <Icon className="h-4 w-4 text-primary mb-3" strokeWidth={1.5} />
+                    <div className="font-serif text-3xl md:text-4xl mb-1">{stat.value}</div>
+                    <div className="text-xs uppercase tracking-[0.15em] text-background/55">
+                      {stat.label}
+                    </div>
+                  </motion.div>
+                );
+              })}
             </div>
           </div>
         </div>
