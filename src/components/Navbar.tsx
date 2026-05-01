@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import dreamRivieraLogo from "@/assets/dreamriviera-logo.png";
 import dreamRivieraLogoDark from "@/assets/dreamriviera-logo-dark.png";
+import dreamRivieraLogoHorizontal from "@/assets/dreamriviera-logo-horizontal.png";
 import { useTranslation } from "react-i18next";
 import { HamburgerMenu } from "@/components/HamburgerMenu";
 import { LayoutDashboard, Heart, Globe, ChevronDown, Check } from "lucide-react";
@@ -108,7 +109,13 @@ export const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group" aria-label="Dream Riviera">
             <img
-              src={showDarkBg ? dreamRivieraLogoDark : dreamRivieraLogo}
+              src={
+                ['/map', '/map-for-sale', '/nemovitosti-mapa'].includes(location.pathname)
+                  ? dreamRivieraLogoHorizontal
+                  : showDarkBg
+                  ? dreamRivieraLogoDark
+                  : dreamRivieraLogo
+              }
               alt="Dream Riviera"
               className="h-7 w-auto object-contain"
             />
