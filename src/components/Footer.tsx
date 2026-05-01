@@ -91,36 +91,6 @@ export const Footer = ({ hideBlog = false }: FooterProps) => {
             </ul>
           </div>
 
-          {/* For Hosts */}
-          <div className="md:col-span-2">
-            <h4 className="text-[11px] uppercase tracking-[0.25em] text-background/50 mb-6">
-              {t("footer.forHosts")}
-            </h4>
-            <ul className="space-y-3 text-sm font-light">
-              <li>
-                <BecomeHostButton className={`p-0 h-auto bg-transparent hover:bg-transparent font-light text-sm ${linkCls}`} />
-              </li>
-              <li>
-                <button
-                  type="button"
-                  onClick={() => toast(t("footer.comingSoon"), { description: t("footer.hostResources") })}
-                  className={`${linkCls} text-left`}
-                >
-                  {t("footer.hostResources")}
-                </button>
-              </li>
-              <li>
-                <button
-                  type="button"
-                  onClick={() => toast(t("footer.comingSoon"), { description: t("footer.communityForum") })}
-                  className={`${linkCls} text-left`}
-                >
-                  {t("footer.communityForum")}
-                </button>
-              </li>
-            </ul>
-          </div>
-
           {/* Contact */}
           <div className="md:col-span-4">
             <h4 className="text-[11px] uppercase tracking-[0.25em] text-background/50 mb-6">
