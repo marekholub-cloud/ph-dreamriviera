@@ -110,7 +110,7 @@ export const Navbar = () => {
             <img
               src={showDarkBg ? dreamRivieraLogoDark : dreamRivieraLogo}
               alt="Dream Riviera"
-              className="h-10 w-auto object-contain"
+              className="h-7 w-auto object-contain"
             />
             <span className={`hidden sm:flex flex-col leading-tight ${showDarkBg ? 'text-foreground' : 'text-white'}`}>
               <span className="font-serif text-lg tracking-wide">Dream Riviera</span>
