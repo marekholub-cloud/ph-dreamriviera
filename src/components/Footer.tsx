@@ -87,7 +87,7 @@ export const Footer = ({ hideBlog = false }: FooterProps) => {
                 <li><Link to="/blog" className={linkCls}>{t("footer.blog")}</Link></li>
               )}
               <li><Link to="/invest" className={linkCls}>Invest</Link></li>
-              <li><Link to="/why-dubai" className={linkCls}>Why Dubai</Link></li>
+              <li><Link to="/why-philippines" className={linkCls}>Why Philippines</Link></li>
             </ul>
           </div>
 
