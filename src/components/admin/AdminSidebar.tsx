@@ -7,7 +7,7 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/comp
 import { ChevronLeft, ChevronRight, Home, User, LogOut, Settings, ExternalLink } from "lucide-react";
 import { useRoleBasedSections } from "@/hooks/useRoleBasedSections";
 import { useAuth } from "@/contexts/AuthContext";
-import logoImage from "@/assets/logo-produbai.png";
+import logoImage from "@/assets/dreamriviera-logo-admin.png";
 import { motion, AnimatePresence } from "framer-motion";
 
 export type AdminSection = 
@@ -127,11 +127,11 @@ export function AdminSidebar({
         )}>
           {!collapsed ? (
           <div className="w-full flex justify-center">
-              <img src={logoImage} alt="PRESTON DEVELOPMENT FZ LLC" className="h-8 w-auto" />
+              <img src={logoImage} alt="Dream Riviera" className="h-8 w-auto" />
             </div>
           ) : (
           <div>
-              <img src={logoImage} alt="CAD" className="h-7 w-auto" />
+              <img src={logoImage} alt="Dream Riviera" className="h-7 w-auto" />
             </div>
           )}
         </div>

@@ -46,7 +46,7 @@ import { MyWishlistSection } from "@/components/dashboard/MyWishlistSection";
 import { MyProfileSection } from "@/components/dashboard/MyProfileSection";
 import { RentalMessagesInbox } from "@/components/rentals/RentalMessagesInbox";
 import { DashboardSwitcher } from "@/components/DashboardSwitcher";
-import logoImage from "@/assets/logo-produbai.png";
+import logoImage from "@/assets/dreamriviera-logo-admin.png";
 
 type GuestTab =
   | "my-stays"
