@@ -56,6 +56,7 @@ import WhyDubai from "./pages/WhyDubai";
 import Invest from "./pages/Invest";
 import GuestDashboard from "./pages/GuestDashboard";
 import ManagerDashboard from "./pages/ManagerDashboard";
+import IslandNest from "./pages/IslandNest";
 
 const queryClient = new QueryClient();
 
@@ -170,6 +171,7 @@ const AppContent = () => {
         <Route path="/why-dubai" element={<WhyDubai />} />
         <Route path="/why-costa-rica" element={<WhyDubai />} />
         <Route path="/invest" element={<Invest />} />
+        <Route path="/island-nest" element={<IslandNest />} />
         <Route 
           path="/muj-profil" 
           element={
