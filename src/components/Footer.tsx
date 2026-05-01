@@ -5,7 +5,6 @@ import { toast } from "sonner";
 import { BecomeHostButton } from "./BecomeHostButton";
 import { PrivacyPolicyDialog } from "./PrivacyPolicyDialog";
 import { TermsOfServiceDialog } from "./TermsOfServiceDialog";
-import dreamRivieraLogo from "@/assets/dreamriviera-logo.png";
 
 interface FooterProps {
   hideBlog?: boolean;
@@ -54,8 +53,8 @@ export const Footer = ({ hideBlog = false }: FooterProps) => {
           {/* Brand */}
           <div className="md:col-span-4">
             <Link to="/" className="flex flex-col mb-6">
-              <img src={dreamRivieraLogo} alt="DreamRiviera" className="h-16 w-auto mb-2" />
-              <span className="text-[11px] uppercase tracking-[0.25em] text-background/50">
+              <span className="font-serif text-3xl tracking-tight">go2dubai.online</span>
+              <span className="text-[11px] uppercase tracking-[0.25em] text-background/50 mt-1">
                 {t("footer.tagline")}
               </span>
             </Link>
