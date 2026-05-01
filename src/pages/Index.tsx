@@ -28,7 +28,7 @@ import {
   TrendingUp,
 } from "lucide-react";
 import heroDubaiImg from "@/assets/hero-dubai.jpg";
-import heroDubaiVideo from "@/assets/hero-dubai.mp4";
+import heroDubaiVideo from "@/assets/hero-romblon.mp4";
 
 interface RentalProperty {
   id: string;
